@@ -1,3 +1,41 @@
+/* --------ICONS -----------*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 /*-----basic styling---------*/
 html,body{
 	margin: 0;
@@ -119,6 +157,10 @@ nav #menu li a:hover{
     opacity: 0;
 }
 
+#toggle .span{
+	text-transform: uppercase;
+}
+
 .close-btn{
 	position: absolute;
     right: 16px;
@@ -127,6 +169,7 @@ nav #menu li a:hover{
     font-weight: 300;
     top: -2px;
     line-height: 80px;
+    text-transform: uppercase;
 }
 
 #resize{
@@ -149,6 +192,8 @@ nav #menu li a:hover{
     text-align: center;
     display: table-cell;
     vertical-align: center;
+    text-transform: uppercase;
+
 }
 
 #resize #menu li{
@@ -169,6 +214,7 @@ nav #menu li a:hover{
 
 #resize #menu li a{
 	color: #fff;
+	font-size: 12px;
 }
 
 #resize #menu li a:hover{
@@ -380,6 +426,9 @@ h6{
 }
 
 /*------about page---------*/
+.about-section{
+	padding-top: 30px;
+}
 .about{
 	height: 500px;
 	
@@ -461,27 +510,30 @@ iframe{
 }
 
 .hr{
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.1);
 	height: 1px;
 }
 
-.info h4{
-	font-size: 16px;
+.info p{
+	font-size: 13px;
 	font-weight: lighter;
 }
 
-.info p{
+.info span{
 	color: #A0A1A0;
 	font-size: 12px;
-	text-transform: uppercase;
 }
 
 .info li{
 	font-weight: lighter;
 }
 
-#media, #address{
+#media{
 	text-align: left;
+}
+
+#logo{
+	text-align: right;
 }
 
 #media ul{
@@ -494,11 +546,18 @@ iframe{
 	padding-right: 10px;
 }
 
+#media ul li a{
+    color: #fff
+}
+
+#media ul li a:hover{
+    text-decoration: none;
+}
+
 @media(max-width: 768px) {
 	.collab,
 	#personal,
-	#media,
-	#address{
+	#media{
 		text-align: center;
 	}
 
@@ -513,7 +572,7 @@ iframe{
 	.collab,
 	#personal,
 	#media,
-	#address{
+	#logo{
 		text-align: center;
 	}
 
@@ -525,6 +584,7 @@ iframe{
 
 
 /*-----contact form---------*/
+/*
 .contact p{
 	color: #A0A1A0;
 }
@@ -576,5 +636,6 @@ iframe{
 		width: 90%;
 	}
 }
+*/
 /*-----basic styling---------*/
 /*-----basic styling---------*/
