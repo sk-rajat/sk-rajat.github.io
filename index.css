@@ -473,9 +473,6 @@ h6{
     top: 18%;
 }
 
-iframe{
-	filter: grayscale(1); 
-}
 
 @media(max-width: 768px) {
 	.about{
